@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos Personales - Krisvely Varela</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial, sans-serif';
+            background-color: #ffebee; /* Color de fondo vibrante */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(45deg, #ff4081, #ff9100); /* Colores más vibrantes */
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+        header h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3em;
+            margin: 0;
+        }
+        header h2 {
+            font-family: 'Pacifico', cursive;
+            font-size: 1.5em;
+            color: #ffff00; /* Color amarillo vibrante */
+            margin: 10px 0 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff4081; /* Rosa vibrante */
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-family: 'Courgette', cursive;
+        }
+        .social-links {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+        }
+        .social-links a i {
+            font-size: 24px;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #ff4081; /* Rosa vibrante */
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5em;
+        }
+        .project-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .project-item {
+            margin: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            width: calc(45% - 40px);
+            transition: transform 0.3s ease;
+        }
+        .project-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .project-item img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #ffeb3b; /* Amarillo vibrante */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Krisvely Varela</h1>
+        <h2>Artista e Ingeniera</h2>
+        <div class="social-links">
+            <a href="https://www.instagram.com/krisvely" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="about.html">Sobre Mí</a>
+        <a href="projects.html">Proyectos Personales</a>
+        <a href="index.html#gallery">Galería</a>
+        <a href="index.html#shop">Tienda</a>
+        <a href="index.html#contact">Contacto</a>
+    </nav>
+    <div class="section">
+        <h2>Proyectos Personales</h2>
+        <div class="project-grid">
+            <div class="project-item">
+                <a href="disfraz.html">
+                    <img src="images/20240517_075835.jpg" alt="Disfraz Reciclado">
+                </a>
+            </div>
+            <div class="project-item">
+                <a href="mural.html">
+                    <img src="images/20240430_105319.jpg" alt="Mural para la Abuela">
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Krisvely Varela. Todos los derechos reservados.
+    </footer>
+</body>
+</html>

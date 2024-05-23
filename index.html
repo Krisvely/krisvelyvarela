@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krisvely Varela - Artista e Ingeniera</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lightbox/css/lightbox.min.css"> <!-- Ruta al archivo lightbox.min.css -->
+    <style>
+        body {
+            font-family: 'Arial, sans-serif';
+            background-color: #ffebee; /* Color de fondo vibrante */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(45deg, #ff4081, #ff9100); /* Colores más vibrantes */
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+        header h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3em;
+            margin: 0;
+        }
+        header h2 {
+            font-family: 'Pacifico', cursive;
+            font-size: 1.5em;
+            color: #ffff00; /* Color amarillo vibrante */
+            margin: 10px 0 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff4081; /* Rosa vibrante */
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-family: 'Courgette', cursive;
+        }
+        .social-links {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+        }
+        .social-links a i {
+            font-size: 24px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1 1 45%; /* Ajuste flexible */
+            max-width: 45%; /* Máximo ancho */
+        }
+        .section.full-width {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+        .section h2 {
+            color: #ff4081; /* Rosa vibrante */
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5em;
+        }
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery-item {
+            margin: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            width: calc(33% - 20px);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+        .contact-info {
+            margin: 20px 0;
+        }
+        footer {
+            background-color: #ffeb3b; /* Amarillo vibrante */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 24px;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .whatsapp-button img {
+            width: 100%;
+            height: 100%;
+        }
+        #WebPixelsManagerSandboxContainer {
+            height: 0px !important;
+            width: 0px !important;
+            position: fixed !important;
+            visibility: hidden !important;
+            overflow: hidden !important;
+            z-index: -100 !important;
+            margin: 0px !important;
+            padding: 0px !important;
+            border: 0px !important;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Krisvely Varela</h1>
+        <h2>Artista e Ingeniera</h2>
+        <div class="social-links">
+            <a href="https://www.instagram.com/krisvely" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </header>
+    <nav>
+        <a href="about.html">Sobre Mí</a>
+        <a href="#gallery">Galería</a>
+        <a href="projects.html">Proyectos Personales</a>
+        <a href="#shop">Tienda</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+    <div class="content">
+        <div id="gallery" class="section full-width gallery">
+            <h2>Galería</h2>
+            <p>Aquí están algunas de mis pinturas favoritas:</p>
+             <div class="gallery-container">
+                <div class="gallery-item">
+                    <a href="images/WhatsApp Image 2024-05-22 at 12.39.11 PM (1).jpeg" data-lightbox="gallery" data-title="Imagen 1">
+                        <img src="images/WhatsApp Image 2024-05-22 at 12.39.11 PM (1).jpeg" alt="Imagen 1">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/WhatsApp Image 2024-05-22 at 12.39.11 PM (2).jpeg" data-lightbox="gallery" data-title="Imagen 2">
+                        <img src="images/WhatsApp Image 2024-05-22 at 12.39.11 PM (2).jpeg" alt="Imagen 2">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/WhatsApp Image 2024-05-22 at 12.39.11 PM.jpeg" data-lightbox="gallery" data-title="Imagen 3">
+                        <img src="images/WhatsApp Image 2024-05-22 at 12.39.11 PM.jpeg" alt="Imagen 3">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/20240124_130348~2.jpg" data-lightbox="gallery" data-title="Imagen 4">
+                        <img src="images/20240124_130348~2.jpg" alt="Imagen 4">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/20240219_174828.jpg" data-lightbox="gallery" data-title="Imagen 5">
+                        <img src="images/20240219_174828.jpg" alt="Imagen 5">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/20240226_113009 (1).jpg" data-lightbox="gallery" data-title="Imagen 6">
+                        <img src="images/20240226_113009 (1).jpg" alt="Imagen 6">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/20240321_152229.jpg" data-lightbox="gallery" data-title="Imagen 7">
+                        <img src="images/20240321_152229.jpg" alt="Imagen 7">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/20240505_215402.jpg" data-lightbox="gallery" data-title="Imagen 8">
+                        <img src="images/20240505_215402.jpg" alt="Imagen 8">
+                    </a>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="images/original_80cb0ad4-8dab-4d7e-b0c9-2bf7b4c7c711_20240315_220232.jpg" data-lightbox="gallery" data-title="Imagen 11">
+                        <img src="images/original_80cb0ad4-8dab-4d7e-b0c9-2bf7b4c7c711_20240315_220232.jpg" alt="Imagen 11">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/WhatsApp Image 2024-05-22 at 12.39.05 PM.jpeg" data-lightbox="gallery" data-title="Imagen 12">
+                        <img src="images/WhatsApp Image 2024-05-22 at 12.39.05 PM.jpeg" alt="Imagen 12">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/WhatsApp Image 2024-05-22 at 12.39.07 PM (1).jpeg" data-lightbox="gallery" data-title="Imagen 13">
+                        <img src="images/WhatsApp Image 2024-05-22 at 12.39.07 PM (1).jpeg" alt="Imagen 13">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/WhatsApp Image 2024-05-22 at 12.39.07 PM.jpeg" data-lightbox="gallery" data-title="Imagen 14">
+                        <img src="images/WhatsApp Image 2024-05-22 at 12.39.07 PM.jpeg" alt="Imagen 14">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/WhatsApp Image 2024-05-22 at 12.39.09 PM (1).jpeg" data-lightbox="gallery" data-title="Imagen 15">
+                        <img src="images/WhatsApp Image 2024-05-22 at 12.39.09 PM (1).jpeg" alt="Imagen 15">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/WhatsApp Image 2024-05-22 at 12.39.09 PM (2).jpeg" data-lightbox="gallery" data-title="Imagen 16">
+                        <img src="images/WhatsApp Image 2024-05-22 at 12.39.09 PM (2).jpeg" alt="Imagen 16">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/WhatsApp Image 2024-05-22 at 12.39.09 PM.jpeg" data-lightbox="gallery" data-title="Imagen 17">
+                        <img src="images/WhatsApp Image 2024-05-22 at 12.39.09 PM.jpeg" alt="Imagen 17">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/WhatsApp Image 2024-05-22 at 12.39.10 PM (1).jpeg" data-lightbox="gallery" data-title="Imagen 18">
+                        <img src="images/WhatsApp Image 2024-05-22 at 12.39.10 PM (1).jpeg" alt="Imagen 18">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/WhatsApp Image 2024-05-22 at 12.39.10 PM (2).jpeg" data-lightbox="gallery" data-title="Imagen 19">
+                        <img src="images/WhatsApp Image 2024-05-22 at 12.39.10 PM (2).jpeg" alt="Imagen 19">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="images/WhatsApp Image 2024-05-22 at 12.39.10 PM.jpeg" data-lightbox="gallery" data-title="Imagen 20">
+                        <img src="images/WhatsApp Image 2024-05-22 at 12.39.10 PM.jpeg" alt="Imagen 20">
+                    </a>
+                </div>
+            </div>
+   
+        </div>
+        <div id="shop" class="section">
+            <h2>Tienda</h2>
+            <p>¿Interesado en comprar mi arte? ¡Haz un pedido personalizado! Contáctame para más detalles.</p>
+        </div>
+        <div id="contact" class="section">
+            <h2>Contacto</h2>
+            <p>No dudes en contactarme:</p>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:krisvelyvarela@gmail.com">krisvelyvarela@gmail.com</a></p>
+                <p>Teléfono: <a href="tel:+3105114387">3105114387</a></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Krisvely Varela. Todos los derechos reservados.
+    </footer>
+    <a class="whatsapp-button" href="https://wa.me/3105114387" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+    <div id="WebPixelsManagerSandboxContainer" aria-hidden="true" tabindex="-1">
+        <iframe src="https://www.vivianagrondona.com/wpm@b9a2501fwec243f7cpececf9bem73dad667/custom/web-pixel-shopify-custom-pixel@064/sandbox/modern/" id="web-pixel-sandbox-CUSTOM-shopify-custom-pixel-LAX-b9a2501fwec243f7cpececf9bem73dad667" name="web-pixel-sandbox-CUSTOM-shopify-custom-pixel-LAX-b9a2501fwec243f7cpececf9bem73dad667" sandbox="allow-scripts allow-forms" tabindex="-1" aria-hidden="true" style="height: 0px !important; width: 0px !important; visibility: hidden !important;"></iframe>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="lightbox/js/lightbox.min.js"></script> <!-- Ruta al archivo lightbox.min.js -->
+</body>
+</html>

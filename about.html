@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krisvely Varela - Artista e Ingeniera</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lightbox/css/lightbox.min.css"> <!-- Ruta al archivo lightbox.min.css -->
+    <style>
+        body {
+            font-family: 'Arial, sans-serif';
+            background-color: #ffebee; /* Color de fondo vibrante */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(45deg, #ff4081, #ff9100); /* Colores más vibrantes */
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+        header h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3em;
+            margin: 0;
+        }
+        header h2 {
+            font-family: 'Pacifico', cursive;
+            font-size: 1.5em;
+            color: #ffff00; /* Color amarillo vibrante */
+            margin: 10px 0 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff4081; /* Rosa vibrante */
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-family: 'Courgette', cursive;
+        }
+        .social-links {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+        }
+        .social-links a i {
+            font-size: 24px;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        .section h2 {
+            color: #ff4081; /* Rosa vibrante */
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5em;
+        }
+        .section img {
+            border-radius: 10px;
+            margin-left: 20px;
+            max-width: 40%;
+            height: auto;
+        }
+        footer {
+            background-color: #ffeb3b; /* Amarillo vibrante */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <h1>Krisvely Varela</h1>
+        <h2>Artista e Ingeniera</h2>
+        <div class="social-links">
+            <a href="https://www.instagram.com/krisvely" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="about.html">Sobre Mí</a>
+        <a href="projects.html">Proyectos Personales</a>
+        <a href="index.html#gallery">Galería</a>
+        <a href="index.html#shop">Tienda</a>
+        <a href="index.html#contact">Contacto</a>
+    </nav>
+    <div class="section">
+        <div class="text">
+            <h2>Sobre Mí</h2>
+            <p>Hola, soy Krisvely Varela, ingeniera de profesión y artista de vocación. Desde pequeña, siempre me ha fascinado el mundo del arte y la creatividad. Me encanta explorar diferentes formas de arte y encontrar nuevas maneras de expresar mis ideas y emociones.</p>
+            <p>A pesar de mi amor por el arte, decidí estudiar ingeniería, lo que me llevó a pausar mi práctica artística por un tiempo. Sin embargo, siempre supe que el arte era una parte esencial de mi vida y eventualmente encontré el camino de regreso a él. Ahora, combino mi carrera como ingeniera con mi pasión por crear obras de arte vibrantes y expresivas que traen alegría y color a la vida de las personas.</p>
+        </div>
+        <img src="images/20240518_202143.jpg" alt="Krisvely Varela">
+    </div>
+    <footer>
+        &copy; 2024 Krisvely Varela. Todos los derechos reservados.
+    </footer>
+    <script src="particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 100,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ff69b4" // Color rosa para los corazones
+                },
+                "shape": {
+                    "type": "image",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "image": {
+                        "src": "path/to/heart.png", // Ruta a la imagen del corazón
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 20,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": false,
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 140,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+</html>
